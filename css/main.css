@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --mainTrans: 0.4s;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+}
+/* Global style */
+.pointer{
+    cursor: pointer;
+}
+
+/* Start of Nav */
+nav{
+    z-index: 1000;
+}
+
+nav .navContent{
+    background-color: #0D0D0D;
+}
+
+nav .sideNavBar .logo{
+    width: 50px;
+}
+
+nav .sideNavBar .shareLinks i:first-of-type{
+    padding-bottom: 4px;
+}
+
+nav .navContent .list-unstyled li{
+    position: relative;
+}
+
+/* End of Nav */
+
+/* Start of landing page */
+.landing-page .meals-landing{
+    cursor: pointer;
+}
+
+.landing-page .meals-landing:hover > .description{
+    top: 0;
+}
+
+.landing-page .meals-landing .description{
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f9f6f6ca;
+    color: #000;
+    transition: top var(--mainTrans);
+    -webkit-transition: top var(--mainTrans);
+    -moz-transition: top var(--mainTrans);
+    -ms-transition: top var(--mainTrans);
+    -o-transition: top var(--mainTrans);
+}
+/* End of landing page */
+
+
+/* Search page */
+#searchName::placeholder,
+#searchFirstLetter::placeholder{
+    color: #dddddd7a ;
+}
+/* End Search page */
+
+
+/* Ingred Page */
+.landing-page .meals-landing{
+    cursor: pointer;
+}
+
+.landing-page .meals-ingred:hover > .description{
+    top: 0;
+}
+
+.landing-page .meals-ingred .description{
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f6f6ca;
+    color: #000;
+    transition: top var(--mainTrans);
+    -webkit-transition: top var(--mainTrans);
+    -moz-transition: top var(--mainTrans);
+    -ms-transition: top var(--mainTrans);
+    -o-transition: top var(--mainTrans);
+}
+
+
+/* End Ingred Page */
+
+
+/* Loading screen */
+
+#outterLoading{
+    display: flex;
+    z-index: 11111;
+    background-color: #0D0D0D;
+}
+
+#innerLoading{
+    display: flex;
+    z-index: 99;
+    position: absolute;
+    background-color: #0D0D0D;
+}
